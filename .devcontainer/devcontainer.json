@@ -1,0 +1,33 @@
+{
+  // GitHub Codespaces configuration for maturitniProjekt.
+  // Grants the container the Linux capabilities required to run OpenVPN
+  // and creates a tunnel to the local AI model running on your machine.
+  "name": "maturitniProjekt",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+
+  // NET_ADMIN + the TUN device are required for OpenVPN to create a tun interface.
+  "runArgs": [
+    "--cap-add=NET_ADMIN",
+    "--device=/dev/net/tun"
+  ],
+
+  // Install OpenVPN once the container is created.
+  "postCreateCommand": "sudo apt-get update -qq && sudo apt-get install -y openvpn",
+
+  "customizations": {
+    "vscode": {
+      // Recommended extensions for working in this Codespace.
+      "extensions": [
+        "ms-vscode.makefile-tools"
+      ],
+      "settings": {
+        // Point tooling at the AI model reachable over the VPN.
+        // Override this value after connecting with the actual VPN-assigned IP.
+        "AI_MODEL_URL": "http://10.8.0.1:11434"
+      }
+    }
+  },
+
+  // Forward the default Ollama port so VS Code can reach the model directly.
+  "forwardPorts": [11434]
+}

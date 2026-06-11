@@ -1,0 +1,85 @@
+name: "Copilot Setup Steps"
+
+# Run automatically when this file changes so you can verify it works.
+# Can also be triggered manually from the Actions tab.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+
+jobs:
+  # This job MUST be named `copilot-setup-steps` for Copilot to pick it up.
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    # Secrets / variables are read from the `copilot` GitHub Actions environment.
+    # Required secret : OVPN_CONFIG   – full text content of your .ovpn file
+    # Optional secret : OVPN_USERNAME – VPN username (when auth-user-pass is needed)
+    # Optional secret : OVPN_PASSWORD – VPN password (when auth-user-pass is needed)
+    # Optional variable: AI_MODEL_URL – base URL of the AI model endpoint behind the VPN
+    #                                   (defaults to http://10.8.0.1:11434 for Ollama)
+    environment: copilot
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y openvpn
+
+      - name: Connect to VPN
+        env:
+          OVPN_CONFIG: ${{ secrets.OVPN_CONFIG }}
+          OVPN_USERNAME: ${{ secrets.OVPN_USERNAME }}
+          OVPN_PASSWORD: ${{ secrets.OVPN_PASSWORD }}
+        run: |
+          if [ -z "$OVPN_CONFIG" ]; then
+            echo "::warning::OVPN_CONFIG secret is not set – skipping VPN connection."
+            echo "Set the OVPN_CONFIG secret in the 'copilot' environment with the contents of your .ovpn file."
+            exit 0
+          fi
+
+          # Write the OpenVPN config from the secret
+          CONFIG_FILE=$(mktemp --suffix=.ovpn)
+          echo "$OVPN_CONFIG" > "$CONFIG_FILE"
+
+          # Append credentials file if username/password are provided
+          if [ -n "$OVPN_USERNAME" ] && [ -n "$OVPN_PASSWORD" ]; then
+            AUTH_FILE=$(mktemp)
+            printf '%s\n%s\n' "$OVPN_USERNAME" "$OVPN_PASSWORD" > "$AUTH_FILE"
+            echo "auth-user-pass $AUTH_FILE" >> "$CONFIG_FILE"
+          fi
+
+          sudo openvpn --config "$CONFIG_FILE" --daemon --log /tmp/openvpn.log
+
+          echo "Waiting for tunnel interface to come up..."
+          for i in $(seq 1 30); do
+            if ip addr show tun0 2>/dev/null | grep -q "inet "; then
+              echo "VPN connected successfully."
+              ip addr show tun0
+              exit 0
+            fi
+            sleep 1
+          done
+
+          echo "::warning::Tunnel interface tun0 was not detected after 30 seconds."
+          echo "--- OpenVPN log ---"
+          cat /tmp/openvpn.log || true
+
+      - name: Export AI model URL
+        env:
+          AI_MODEL_URL: ${{ vars.AI_MODEL_URL }}
+        run: |
+          # Default to port 11434 on the first VPN peer (typical Ollama setup)
+          URL="${AI_MODEL_URL:-http://10.8.0.1:11434}"
+          echo "AI_MODEL_URL=$URL" >> "$GITHUB_ENV"
+          echo "AI model will be reachable at: $URL"
