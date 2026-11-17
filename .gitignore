@@ -1,0 +1,13 @@
+# KiCad backups and temporary files
+*.bak
+*-erc.json
+*.kicad_lock
+*.kicad_prl
+
+# Python cache and temp
+__pycache__/
+*.pyc
+
+# Local history / IDE
+.history/
+.gemini/
