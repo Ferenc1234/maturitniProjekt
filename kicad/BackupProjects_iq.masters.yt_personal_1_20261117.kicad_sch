@@ -497,7 +497,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -515,7 +515,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -665,7 +665,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -683,7 +683,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -833,7 +833,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -851,7 +851,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -1001,7 +1001,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -1019,7 +1019,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -1169,7 +1169,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -1187,7 +1187,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -1337,7 +1337,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -1355,7 +1355,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -1495,7 +1495,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -1513,7 +1513,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -1663,7 +1663,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -1681,7 +1681,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -1831,7 +1831,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -1849,7 +1849,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -1999,7 +1999,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -2017,7 +2017,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -2167,7 +2167,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -2185,7 +2185,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -2335,7 +2335,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -2353,7 +2353,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -2503,7 +2503,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -2521,7 +2521,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -2671,7 +2671,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "1"
@@ -2689,7 +2689,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "2"
@@ -2829,7 +2829,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -2847,7 +2847,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -2987,7 +2987,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -3005,7 +3005,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -3145,7 +3145,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -3163,7 +3163,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -3303,7 +3303,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -3321,7 +3321,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -3461,7 +3461,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -3479,7 +3479,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -3619,7 +3619,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -3637,7 +3637,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -3777,7 +3777,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -3795,7 +3795,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -3935,7 +3935,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -3953,7 +3953,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -4093,7 +4093,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -4111,7 +4111,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -12887,7 +12887,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 2.54 0)
 					(length 2.54)
 					(name "1"
@@ -12905,7 +12905,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
 					(name "2"
@@ -12923,7 +12923,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 -2.54 0)
 					(length 2.54)
 					(name "3"
@@ -15135,7 +15135,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -15153,7 +15153,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -15303,7 +15303,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
@@ -15321,7 +15321,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
@@ -15471,7 +15471,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -15489,7 +15489,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -15629,7 +15629,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -15647,7 +15647,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -15797,7 +15797,7 @@
 						(justify left top)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "1"
@@ -15815,7 +15815,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -20608,16 +20608,7 @@
 		)
 		(uuid "06c7a654-fc70-4456-ae7a-e8459966adeb")
 	)
-	(wire
-		(pts
-			(xy 347.98 243.84) (xy 347.98 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07583c95-0330-4164-9a15-820812fc643d")
-	)
+	
 	(wire
 		(pts
 			(xy 300.99 77.47) (xy 346.71 77.47)
@@ -20778,16 +20769,7 @@
 		)
 		(uuid "1b9e05ef-34c2-4838-b3b1-33b455f63633")
 	)
-	(wire
-		(pts
-			(xy 355.6 243.84) (xy 355.6 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d454bc7-0578-441c-9ee4-36e3423c5bfb")
-	)
+	
 	(wire
 		(pts
 			(xy 204.47 238.76) (xy 207.01 238.76)
@@ -20848,16 +20830,7 @@
 		)
 		(uuid "2085e30e-e26d-4b0a-a56b-866f0d59ce23")
 	)
-	(wire
-		(pts
-			(xy 340.36 243.84) (xy 340.36 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2459597f-1c79-48bc-8ff5-08b7ef0b0db0")
-	)
+	
 	(wire
 		(pts
 			(xy 340.36 223.52) (xy 340.36 224.79)
@@ -38187,94 +38160,7 @@
 		)
 	)
 
-	(symbol
-		(lib_id "PWR_FLAG")
-		(at 64.77 95.25 0)
-		(unit 0)
-		(body_style 0)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cdaa6e73-9b40-4756-a9fb-76aab4809f0c")
-		(property "Reference" "#FLG?"
-			(at 64.77 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 64.77 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 64.77 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "flag power"
-			(at 64.77 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8f9f6db8-78f7-4e3c-967b-0b7790c104ed")
-		)
-		(instances
-			(project "BackupProjects_iq.masters.yt_personal_1_20261117"
-				(path "/0ba0140b-6504-41ba-b53a-eb9f8d614e9e"
-					(reference "#FLG?")
-					(unit 0)
-				)
-			)
-		)
-	)
+
 
 	(symbol
 		(lib_id "PWR_FLAG")
@@ -38799,6 +38685,198 @@
 		)
 		(pin "1"
 			(uuid "518735aa-1387-4213-926f-48613053e34d")
+		)
+		(instances
+			(project "BackupProjects_iq.masters.yt_personal_1_20261117"
+				(path "/0ba0140b-6504-41ba-b53a-eb9f8d614e9e"
+					(reference "#FLG?")
+					(unit 0)
+				)
+			)
+		)
+	)
+
+	(no_connect (at 204.47 311.15) (uuid "67b84ae6-9b0b-4e43-9d7c-2d65c6e12290"))
+	(no_connect (at 314.96 152.4) (uuid "da72b917-87ec-4f08-885e-cc19381a5355"))
+	(no_connect (at 340.36 285.75) (uuid "38266868-0a31-4ed2-8273-2d2fb563fa3c"))
+	(no_connect (at 193.04 92.71) (uuid "93dae362-c916-4328-bc67-b87b5d83e672"))
+	(no_connect (at 200.66 50.8) (uuid "82a29f3a-2176-4516-aeee-485d41890a29"))
+	(no_connect (at 191.77 163.83) (uuid "c8c02139-5642-433e-990d-d2f67fcce020"))
+	(no_connect (at 162.56 287.02) (uuid "b132536a-6e28-4c06-83da-6e7117498f5e"))
+	(no_connect (at 207.01 241.3) (uuid "7af06092-f4b8-4fe5-92fc-0e88348d750f"))
+	(no_connect (at 165.1 92.71) (uuid "2b78531c-2724-4e22-a9c4-ecfd4cc36b44"))
+	(no_connect (at 251.46 297.18) (uuid "8c95a7d2-fc46-4494-a20f-f80e4f64b901"))
+	(no_connect (at 243.84 39.37) (uuid "f560ae7d-ab3d-4162-90c4-b288ccbf3b2e"))
+	(no_connect (at 224.79 248.92) (uuid "831980b1-b059-49c4-b34c-9f521214fca3"))
+	(no_connect (at 347.98 245.11) (uuid "3a95c1f8-29c2-4284-9761-f1484e8ced5d"))
+	(no_connect (at 229.87 298.45) (uuid "1b0ea370-d3cb-4b36-9871-10e6d48178da"))
+	(no_connect (at 185.42 309.88) (uuid "6468db60-da40-46ef-a311-f506c06fb5c1"))
+	(no_connect (at 209.55 278.13) (uuid "55810e85-259c-4bb2-9ef6-997565a72bfe"))
+	(no_connect (at 251.46 276.86) (uuid "d00c1058-7f62-4cf5-90c8-8fea34e45c76"))
+	(no_connect (at 149.86 298.45) (uuid "301418a2-f96a-4e37-9a4a-4609cd784305"))
+	(no_connect (at 36.83 311.15) (uuid "1e0f4e53-bf57-453b-87b5-521743c0b504"))
+	(no_connect (at 200.66 73.66) (uuid "c4f04ce1-2edd-4265-8a47-b3a9c904e09c"))
+	(no_connect (at 167.64 307.34) (uuid "593beae8-79ee-44f0-96bd-bd8a1c888315"))
+	(no_connect (at 191.77 171.45) (uuid "ae12f45c-50c4-4242-bd80-1cbdd7044105"))
+	(no_connect (at 167.64 299.72) (uuid "603970cb-473c-4d19-a394-de76743db933"))
+	(no_connect (at 60.96 311.15) (uuid "55afc91c-62ff-43a8-9bcb-e76d2beebae1"))
+	(no_connect (at 214.63 298.45) (uuid "6893f3d9-1705-4177-8aa9-69f1761a1d3a"))
+	(no_connect (at 163.83 168.91) (uuid "7e6823c2-f69b-463f-8d4c-499902d77e24"))
+	(no_connect (at 340.36 275.59) (uuid "2055174e-fb1d-4132-8699-1f157cb25b5e"))
+	(no_connect (at 185.42 314.96) (uuid "4be40cb9-f198-4dde-8d2a-6c8382d2070e"))
+	(no_connect (at 237.49 302.26) (uuid "d099aee7-fe81-486a-bfde-65c2d17f4cc5"))
+	(no_connect (at 137.16 304.8) (uuid "bba301d7-e4b3-49c7-adae-c09bce8205d8"))
+	(no_connect (at 289.56 285.75) (uuid "80109f47-94bc-462d-8549-1bb92caa810e"))
+	(no_connect (at 231.14 316.23) (uuid "4a01d5e1-232f-4593-9ed1-36c17ca1ade8"))
+	(no_connect (at 322.58 285.75) (uuid "e394f66a-bd9f-451f-a593-2d2f7be2c0c5"))
+	(no_connect (at 200.66 66.04) (uuid "b0ba1584-4620-42ad-a1c6-fa52aa1ae940"))
+	(no_connect (at 195.58 312.42) (uuid "bd31d566-9ac0-4b9f-b885-c67fe2fb3303"))
+	(no_connect (at 191.77 166.37) (uuid "ce18cd35-2bed-44a2-b9e9-cf6c53a61214"))
+	(no_connect (at 170.18 92.71) (uuid "1629ee82-0090-484c-a2e8-164522274d64"))
+	(no_connect (at 149.86 288.29) (uuid "20ca836a-3c2d-4e85-b11f-283aabdb2b30"))
+	(no_connect (at 67.31 44.45) (uuid "79e63419-26fd-4896-adbe-bc779c9d8dbe"))
+	(no_connect (at 182.88 92.71) (uuid "144bc497-d67d-405e-95ec-da1343e1a2d8"))
+	(no_connect (at 226.06 311.15) (uuid "98d55c32-45c4-4320-9930-5db3f8cc857f"))
+	(no_connect (at 163.83 163.83) (uuid "ef63e5f0-e1c2-4cea-8e39-b50f2897119c"))
+	(no_connect (at 256.54 276.86) (uuid "8c1ca2a5-a371-40e7-ac2e-71e525cf06b6"))
+	(no_connect (at 36.83 300.99) (uuid "d4c38ee0-91a6-4717-b5d1-bbfdf247d5e3"))
+	(no_connect (at 346.71 64.77) (uuid "c477a9bb-dab0-4766-82d1-2ad299c916ce"))
+	(no_connect (at 185.42 298.45) (uuid "7504ef0d-0545-40c6-9f63-7d0d4badd446"))
+	(no_connect (at 127.0 304.8) (uuid "231dbb42-a597-45ea-bf84-d3acf11dcc62"))
+	(no_connect (at 39.37 232.41) (uuid "9ea3aac3-124d-4852-8756-a0d9be7fc6bb"))
+	(no_connect (at 200.66 78.74) (uuid "cc4f112d-84f9-4d7f-b147-9a27c0a29f8d"))
+	(no_connect (at 200.66 55.88) (uuid "8246bfa8-cf87-401f-ae2f-1e92ecb3ffea"))
+	(no_connect (at 200.66 60.96) (uuid "01eeb537-1dab-48a2-8f9f-46c64ec03813"))
+	(no_connect (at 107.95 313.69) (uuid "30ec1023-8d16-4512-b819-d288c0556b8d"))
+	(no_connect (at 222.25 298.45) (uuid "67bcd10d-3af5-4c05-8b5a-d441e02c9b0b"))
+	(no_connect (at 271.78 276.86) (uuid "68e50121-1eeb-4b4a-a28f-d43b46e48e63"))
+	(no_connect (at 151.13 284.48) (uuid "02a6d226-48ea-4f4c-83a0-23c8b0da0166"))
+	(no_connect (at 167.64 92.71) (uuid "fc4fc388-7dfe-4563-a513-c76faf7dda97"))
+	(no_connect (at 60.96 300.99) (uuid "1fdc53f6-dee9-4337-a3ea-70bc27ecf534"))
+	(no_connect (at 355.6 245.11) (uuid "b22c38bb-0d70-4e80-b1e2-c1f892c687e4"))
+	(no_connect (at 274.32 93.98) (uuid "d41e80ca-2e0d-45a5-848a-bba9234d7cb9"))
+	(no_connect (at 149.86 316.23) (uuid "c976a5c5-c322-4850-a580-d4664add93a6"))
+	(no_connect (at 269.24 160.02) (uuid "c18b37fd-c5f5-4693-a672-3c053147856a"))
+	(no_connect (at 176.53 314.96) (uuid "101aa5c1-3cd0-47df-8896-30aa5f26b669"))
+	(no_connect (at 182.88 287.02) (uuid "a1a20f72-f954-4f1c-9ec9-d12f4a0d11f2"))
+	(no_connect (at 224.79 251.46) (uuid "a1a68f16-c9de-4bf7-8c5a-1dc43747b9a1"))
+	(no_connect (at 256.54 297.18) (uuid "ceb97c89-81b8-4d7d-a52a-e87bca82b090"))
+	(no_connect (at 229.87 278.13) (uuid "d2c79424-06ce-4a74-8f59-741071193ecd"))
+	(no_connect (at 185.42 92.71) (uuid "dfb3f68c-c3eb-4a44-911d-ebc55768c634"))
+	(no_connect (at 297.18 280.67) (uuid "9482d6ef-4a4c-4a46-87bf-0320527a776d"))
+	(no_connect (at 187.96 92.71) (uuid "38a49e8c-ae46-4cf9-b0e1-ef6b19ef85aa"))
+	(no_connect (at 200.66 71.12) (uuid "e5112678-3e52-4821-ab1e-ca307ce07a50"))
+	(no_connect (at 200.66 76.2) (uuid "62efb045-bb1d-4016-bee6-d5ab7d5b2478"))
+	(no_connect (at 264.16 276.86) (uuid "3d045d70-d53a-447f-bb4b-67a84937bcd0"))
+	(no_connect (at 243.84 31.75) (uuid "d1389397-2e77-45e7-8a99-dd1bd3fe1aca"))
+	(no_connect (at 257.81 307.34) (uuid "1cf65eb2-4d4e-4a57-93d5-6e45e5197f41"))
+	(no_connect (at 209.55 298.45) (uuid "cc8c3028-0115-42db-85e1-7f420695375b"))
+	(no_connect (at 297.18 290.83) (uuid "dee5c8bb-d0ab-4ca7-89f7-1ca0cdd0dea4"))
+	(no_connect (at 200.66 53.34) (uuid "ea1ca7a6-982b-4130-8706-51bfa954656e"))
+	(no_connect (at 200.66 58.42) (uuid "9dbcdfb4-1476-410c-bf12-e5637efda74c"))
+	(no_connect (at 340.36 245.11) (uuid "336a75ad-6d63-49ab-92ea-510e5c45e40d"))
+	(no_connect (at 271.78 297.18) (uuid "a6e99790-4155-4f0c-9db9-09a8adf8a17b"))
+	(no_connect (at 177.8 307.34) (uuid "20a9fbb6-c596-4b66-99a3-79f8cf7cbe45"))
+	(no_connect (at 177.8 299.72) (uuid "c97f6f38-bad0-4626-b58c-56997982c793"))
+	(no_connect (at 214.63 278.13) (uuid "e24a2706-d9d8-4dc7-a10b-441d1f04f0c9"))
+	(no_connect (at 151.13 274.32) (uuid "34196bd7-68ad-459a-bb1d-82b54e968ac7"))
+	(no_connect (at 204.47 316.23) (uuid "a3004bf8-af43-44bc-aa34-948dcd442e1c"))
+	(no_connect (at 264.16 297.18) (uuid "a96be99b-d18f-412e-83d5-4530ff1e6ce5"))
+	(no_connect (at 247.65 307.34) (uuid "e94cdc95-dc4d-4717-a43f-277700791560"))
+	(no_connect (at 190.5 92.71) (uuid "90d7dc3b-6899-4580-a3c8-c0dc3edbb061"))
+	(no_connect (at 149.86 306.07) (uuid "d7c3784b-b27b-4ba2-84c8-6c82beb952d2"))
+	(no_connect (at 231.14 306.07) (uuid "ea03a0a1-ce2f-401d-ade8-9139de49dd95"))
+	(no_connect (at 200.66 81.28) (uuid "99293024-d0e9-4331-a775-021750be6de2"))
+	(no_connect (at 97.79 313.69) (uuid "fb90f24a-c516-4237-9e02-04d27340eba5"))
+	(no_connect (at 322.58 275.59) (uuid "60e24bf5-60aa-4abe-b99f-1ce0a27fbe4d"))
+	(no_connect (at 214.63 313.69) (uuid "1f0d5044-0365-4941-8c09-2528e28d7fd8"))
+	(no_connect (at 269.24 152.4) (uuid "0f9a0d44-fdd4-4835-8a5f-1b67725c833e"))
+	(no_connect (at 247.65 302.26) (uuid "c04c0726-2b3d-4ee8-87fd-bf3ba997df2c"))
+	(no_connect (at 195.58 298.45) (uuid "bce3ba33-68b6-4dfe-b0da-0b7387e95775"))
+	(no_connect (at 346.71 49.53) (uuid "bee61ca8-6d62-4e50-8602-c3133be44848"))
+	(no_connect (at 166.37 314.96) (uuid "07e6de8b-0e67-4c2b-9090-c6ed8e9d672c"))
+	(no_connect (at 200.66 63.5) (uuid "1c7d417d-2ba8-484b-b9c7-2d4ab763910f"))
+	(no_connect (at 200.66 68.58) (uuid "b9178747-2dc5-4b9f-96a2-d0795158ed3c"))
+	(no_connect (at 222.25 278.13) (uuid "6a35ad87-3597-4841-89af-3b876acacf15"))
+
+	(symbol
+		(lib_id "PWR_FLAG")
+		(at 64.77 92.71 0)
+		(unit 0)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8098da6e-6aa3-4994-8f66-49733d222913")
+		(property "Reference" "#FLG?"
+			(at 64.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 64.77 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 64.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 64.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "185881e9-0acf-4894-816e-3151da99235c")
 		)
 		(instances
 			(project "BackupProjects_iq.masters.yt_personal_1_20261117"
