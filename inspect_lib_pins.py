@@ -1,6 +1,6 @@
 import re
 
-sch_path = r"kicad\BackupProjects_iq.masters.yt_personal_1_20261117.kicad_sch"
+sch_path = r"kicad\maturita.kicad_sch"
 with open(sch_path, "r", encoding="utf-8") as f:
     content = f.read()
 

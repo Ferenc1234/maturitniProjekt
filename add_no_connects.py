@@ -2,8 +2,8 @@ import json
 import uuid
 import subprocess
 
-sch_path = r"kicad\BackupProjects_iq.masters.yt_personal_1_20261117.kicad_sch"
-erc_json_path = r"kicad\BackupProjects_iq.masters.yt_personal_1_20261117-erc.json"
+sch_path = r"kicad\maturita.kicad_sch"
+erc_json_path = r"kicad\maturita-erc.json"
 
 with open(erc_json_path, "r", encoding="utf-8") as f:
     erc_data = json.load(f)

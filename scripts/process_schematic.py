@@ -4,8 +4,8 @@ import subprocess
 import os
 import re
 
-SCH_FILE = "BackupProjects_iq.masters.yt_personal_1_20261117.kicad_sch"
-ERC_JSON = "BackupProjects_iq.masters.yt_personal_1_20261117-erc.json"
+SCH_FILE = "maturita.kicad_sch"
+ERC_JSON = "maturita-erc.json"
 
 with open(ERC_JSON, "r", encoding="utf-8") as f:
     erc_data = json.load(f)
@@ -144,7 +144,7 @@ for net in undriven_nets:
 			(uuid "{str(uuid.uuid4())}")
 		)
 		(instances
-			(project "BackupProjects_iq.masters.yt_personal_1_20261117"
+			(project "maturita"
 				(path "/0ba0140b-6504-41ba-b53a-eb9f8d614e9e"
 					(reference "#FLG?")
 					(unit 0)

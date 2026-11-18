@@ -1,6 +1,6 @@
 import json
 
-with open("BackupProjects_iq.masters.yt_personal_1_20261117-erc.json", "r", encoding="utf-8") as f:
+with open("maturita-erc.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 print("=== TARGET ERC VIOLATIONS ===")

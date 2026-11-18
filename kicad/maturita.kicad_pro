@@ -492,7 +492,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "BackupProjects_iq.masters.yt_personal_1_20261117.kicad_pro",
+    "filename": "maturita.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -660,7 +660,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "BackupProjects_iq.masters.yt_personal_1_20261117.kicad_sch",
+        "filename": "maturita.kicad_sch",
         "name": "",
         "uuid": "0ba0140b-6504-41ba-b53a-eb9f8d614e9e"
       }

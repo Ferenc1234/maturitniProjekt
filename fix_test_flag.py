@@ -3,8 +3,8 @@ import uuid
 import subprocess
 import re
 
-sch_path = r"kicad\BackupProjects_iq.masters.yt_personal_1_20261117.kicad_sch"
-erc_json_path = r"kicad\BackupProjects_iq.masters.yt_personal_1_20261117-erc.json"
+sch_path = r"kicad\maturita.kicad_sch"
+erc_json_path = r"kicad\maturita-erc.json"
 
 with open(sch_path, "r", encoding="utf-8") as f:
     sch_content = f.read()
@@ -93,7 +93,7 @@ pwr_flag_instance = f'''\t(symbol
 			(uuid "{str(uuid.uuid4())}")
 		)
 		(instances
-			(project "BackupProjects_iq.masters.yt_personal_1_20261117"
+			(project "maturita"
 				(path "/0ba0140b-6504-41ba-b53a-eb9f8d614e9e"
 					(reference "#FLG?")
 					(unit 0)
