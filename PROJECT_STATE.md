@@ -41,11 +41,12 @@
   - 24-bit ADC (U2) & Reference (U3) & Op-Amp (U4): Center-right analog frontend
   - Multiplexers (U6, U7) & Relays: Lower measurement switching matrix
   - 24V Boost (MT3608L) & Current Source: Top/Right high-voltage module
+  - Protection & Discharge Subsystem (Safe Pre-Scan & Clamping): Aligned at X: [280.0, 370.0], Y: [220.0, 305.0] on 1.27 mm grid with >= 10.16 mm spacing.
 - **Free Whitespace Areas**:
-  - Right side (X > 250 mm) and Bottom-right quadrant (X > 200, Y > 150) are clear for adding new blocks (e.g. 3rd terminal gate driver / curve tracer expansion).
+  - Right side (X > 380 mm) and Bottom-right quadrant are clear for additional expansions.
 
 ## 5. ERC Status & Roadmap Summary
-- **Current ERC Violations**: 278 (mostly pin-driven warnings/unconnected pins pending pull-ups/no-connects).
+- **Current ERC Violations**: 420 (including pin warnings and unassigned net notices after detailed block wiring).
 - **Completed Roadmap Items (`funkce.md` Section 1)**:
   - [x] Analog measuring core & TI ADS1220 24-bit ADC
   - [x] Precision reference TI REF5025 (2.5 V) & OPA2333 buffer
@@ -54,7 +55,10 @@
   - [x] 24V Zener test module with MT3608L & LM317L constant current (2.019 mA)
   - [x] LC oscillator circuit with TLV3201
   - [x] TP4056 USB-C charging & AP2112K-3.3 LDO
-- **Next Roadmap Items (`funkce.md` Section 2)**:
-  - [ ] 100 ohm range MOSFET switch optimization (R_DS(on) reduction)
-  - [ ] 3rd terminal gate driver / Curve Tracer expansion (BJT/MOSFET characterization)
-  - [ ] Safe pre-scan autodetection & discharge protection circuit
+  - [x] Safe "Soft Pre-Scan" & pinout autodetection
+  - [x] Discharge protection circuit & residual voltage sensing (Safe-by-Default, fully wired & aligned in schematic)
+
+## 6. Next Roadmap Items (`funkce.md` Section 2)
+- [ ] 100 ohm range MOSFET switch optimization (R_DS(on) reduction)
+- [ ] 3rd terminal gate driver / Curve Tracer expansion (BJT/MOSFET characterization)
+- [ ] External battery/accumulator tester (ESR, constant current load, capacity)

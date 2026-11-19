@@ -32,6 +32,20 @@ Bateriově napájený, vysoce přesný tester elektronických součástek (RLC m
 * **Nízkoúbytkový LDO regulátor:** AP2112K-3.3 s vysokým PSRR pro napájení 3.3V logiky a analogové části.
 * **Konektivita:** Native USB rozhraní ESP32-S3 (USB_DN, USB_DP) pro programování a přenos dat do PC.
 
+### 1.6 Bezpečný "Soft Pre-Scan" a autodetekce vývodů
+* **Snímání bez rizika:** Implementace 3 pomocných GPIO pinů s $10\text{ k}\Omega$ rezistory zapojených na svorky TP1, TP2 a TP3.
+* **Identifikační sekvence:** Měření PN přechodů a hradlové kapacity s vypnutými silovými větvemi.
+* **Zobrazení pinoutu a výzva:** Detekce typu součástky (NPN/PNP, N/P-MOSFET) a zobrazení správného zapojení na displeji před započetím plného 24bitového testu.
+
+### 1.7 Ochrana proti přepětí a nabitým kondenzátorům
+* **Architektura "Safe-by-Default":** Fyzické galvanické odpojení citlivého 24bitového analogového jádra v klidovém stavu pomocí izolačních relé (G6K-2F-Y).
+* **Vybíjecí a detekční obvod:**
+  * Připojení svorek v klidovém stavu na vybíjecí výkonové rezistory $100\ \Omega\ / 2\text{ W}$ spojené s GND.
+  * Snímání zbytkového napětí na svorkách pomocí napěťového děliče zapojeného do interního ADC ESP32 (chráněného Zenerovou a Schottkyho diodou).
+* **Varovná signalizace:**
+  * Automatický alarm při přítomnosti napětí $U > |0,5\text{ V}|$.
+  * Vybíjecí rutina s vizuální indikací (LED + displej) a blokováním spuštění testu, dokud napětí neklesne bezpečně na $0\text{ V}$.
+
 ---
 
 ## 2. Plánované funkce a HW rozšíření (Roadmap)
@@ -54,21 +68,7 @@ Bateriově napájený, vysoce přesný tester elektronických součástek (RLC m
   * **BJT ($h_{FE}$):** Měření proudů báze $I_B = \frac{V_{PWM} - V_{AIN3}}{R_B}$ a kolektoru $I_C$ s výpočtem $h_{FE} = \frac{I_C}{I_B}$.
   * **MOSFET ($V_{GS(th)}$ a $R_{DS(on)}$):** Rampa $V_{GS}$ s detekcí prahového napětí $V_{GS(th)}$ při $I_D = 250\ \mu\text{A}$ a měření $R_{DS(on)}$ v plném sepnutí.
 
-### 2.3 Bezpečný "Soft Pre-Scan" a autodetekce vývodů
-- [ ] **Snímání bez rizika:** Implementace 3 pomocných GPIO pinů s $10\text{ k}\Omega$ rezistory zapojených na svorky TP1, TP2 a TP3.
-- [ ] **Identifikační sekvence:** Měření PN přechodů a hradlové kapacity s vypnutými silovými větvemi.
-- [ ] **Zobrazení pinoutu a výzva:** Detekce typu součástky (NPN/PNP, N/P-MOSFET) a zobrazení správného zapojení na displeji před započetím plného 24bitového testu.
-
-### 2.4 Ochrana proti přepětí a nabitým kondenzátorům
-- [ ] **Architektura "Safe-by-Default":** Fyzické galvanické odpojení citlivého 24bitového analogového jádra v klidovém stavu pomocí izolačních relé (G6K-2F-Y).
-- [ ] **Vybíjecí a detekční obvod:**
-  * Připojení svorek v klidovém stavu na vybíjecí výkonové rezistory $100\ \Omega\ / 2\text{ W}$ spojené s GND.
-  * Snímání zbytkového napětí na svorkách pomocí napěťového děliče zapojeného do interního ADC ESP32 (chráněného Zenerovou a Schottkyho diodou).
-- [ ] **Varovná signalizace:**
-  * Automatický alarm při přítomnosti napětí $U > |0,5\text{ V}|$.
-  * Vybíjecí rutina s vizuální indikací (LED + displej) a blokováním spuštění testu, dokud napětí neklesne bezpečně na $0\text{ V}$.
-
-### 2.5 Tester externích akumulátorů a baterií
+### 2.3 Tester externích akumulátorů a baterií
 - [ ] **Měření vnitřního DC odporu ($R_{i,DC}$ / ESR):**
   * Pulzní metoda zatížení akumulátoru definovaným proudovým skokem ($I_{load} = 500\text{ mA}$) po dobu $50\text{ ms}$.
   * Výpočet vnitřního odporu z poklesu svorkového napětí:

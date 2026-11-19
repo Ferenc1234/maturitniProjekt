@@ -1,19 +1,18 @@
-# KiCad Editing Rules
+# KiCad MCP-First Engineering Rules
 
-- Always run `kicad-cli sch erc` after schema edits.
-- Always snap components and wires to the 1.27 mm grid.
-- Use Python scripts for programmatic changes instead of manual S-expression edits.
+1. **MCP-First Hardware Edits:**
+   - Always use the `kicad` MCP server tools to inspect pins, move/place components, wire nets, and run ERC/DRC.
+   - Never edit `.kicad_sch` or `.kicad_pcb` via raw text manipulation or custom S-expression Python scripts.
 
-## Speed & Memory Rules (Token Efficiency)
+2. **Context & Memory:**
+   - Always check `@./PROJECT_STATE.md` first for assigned/free ESP32-S3 GPIOs, net names, and sheet coordinates.
+   - Update `PROJECT_STATE.md` after every hardware or schematic change to keep the pinout table and coordinates accurate.
 
-1. **Memory-First Rule:** Always read `PROJECT_STATE.md` before touching any KiCad file. NEVER read the entire `.kicad_sch` or `.kicad_pcb` file into context at once—always query or edit specific sections via short Python scripts.
-2. **State Sync Rule:** After any schematic, PCB, `funkce.md`, or `seznamSoucastek.md` edit, update `PROJECT_STATE.md` so the pinout table, net list, and free coordinates stay accurate.
-3. **Ignore Noise:** Ignore `.bak` files and temporary Python helper scripts when scanning the workspace.
+3. **Documentation & BOM Sync:**
+   - Whenever any hardware block, IC, net, or component value is added, removed, or modified:
+     - Automatically update `docs/funkce.md` (Czech technical style, moving completed roadmap items from `[ ]` to `[x]`).
+     - Automatically update `docs/seznamSoucastek.md` (BOM) to match current schematic components and quantities.
 
-## Documentation & BOM Sync Policy
-
-1. Whenever any hardware block, IC, net, or component value is added, removed, or modified in the KiCad schematic/PCB:
-   - Automatically update `funkce.md` (move completed roadmap items from Section 2 `[ ]` to `[x]` and document them under Section 1 in Czech, matching the existing technical style and formatting).
-   - Automatically update `seznamSoucastek.md` (add/remove/update designators, values, packages, LCSC part numbers, and quantities to match the current KiCad schematic).
-2. Always run `F:\kicad\bin\kicad-cli.exe sch erc` and `kicad-cli sch export bom` (or verify component counts via Python) before updating `seznamSoucastek.md` so the BOM never drifts from the schematic.
-3. Never commit or push to GitHub without showing a summary of the schematic, `funkce.md`, and `seznamSoucastek.md` changes first.
+4. **Safety & Git Workflow:**
+   - Never overwrite open KiCad GUI files without warning.
+   - Summarize schematic, `funkce.md`, and `seznamSoucastek.md` changes before committing to Git.
